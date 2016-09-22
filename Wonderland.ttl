@@ -6,7 +6,7 @@ base <http://bibliotek.se>
 
 </work/Alice-i-underlandet> a bf:Work ;
 	bf:title "Alice i underlandet"@sv ;
-	bf:translationOf </bok/Alice-in-Wonderland>.
+	bf:translationOf </bok/Alice-in-Wonderland> ;
 	bf:contribution  [ a bf:Contribution ;
              bf:agent </person/Åke-runnqvist> ;
    		 bf:role relator:trl ] .
