@@ -1,6 +1,12 @@
 prefix bf: <http://id.loc.gov/ontologies/bibframe>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix relator:  <http://id.loc.gov/relators>
+
 base <http://bibliotek.se>
 
-</bok/Alice-i-underlandet> a bf:Work ;
-	bf:name"Alice i underlandet"@sv .
+</work/Alice-i-underlandet> a bf:Work ;
+	bf:title "Alice i underlandet"@sv ;
+	bf:translationOf </bok/Alice-in-Wonderland>.
+	bf:contribution  [ a bf:Contribution ;
+             bf:agent </person/Åke-runnqvist> ;
+   		 bf:role relator:trl ] .
