@@ -1,1 +1,6 @@
+prefix bf: <http://id.loc.gov/ontologies/bibframe>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+base <http://bibliotek.se>
 
+</bok/Alice-i-underlandet> a bf:Work ;
+	bf:name"Alice i underlandet"@sv .
