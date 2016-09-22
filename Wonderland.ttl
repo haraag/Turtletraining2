@@ -1,12 +1,16 @@
 prefix bf: <http://id.loc.gov/ontologies/bibframe>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix relator:  <http://id.loc.gov/relators>
+prefix lclang: <http://id.loc.gov/vocabulary/language>
+prefix kbmarc: <http://id.kb.se>
 
 base <http://bibliotek.se>
 
 </work/Alice-i-underlandet> a bf:Work ;
 	bf:title "Alice i underlandet"@sv ;
 	bf:translationOf </bok/Alice-in-Wonderland> ;
-	bf:contribution  [ a bf:Contribution ;
-             bf:agent </person/Åke-runnqvist> ;
-   		 bf:role relator:trl ] .
+	bf:contribution  [ a bf:Contribution , kbmarc:MainEntry ;
+     bf:agent </person/Åke-runnqvist> ;
+   	bf:role relator:trl ; 
+                     ] ; 
+	bf:language lclang:swe ;
