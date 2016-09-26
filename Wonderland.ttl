@@ -20,6 +20,7 @@ base <http://bibliotek.se>
          bf:agent </person/tove-jansson> ;
          bf:role lcrel:ill ] ;
 	bf:language lclang:swe ;
+bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
 
 </person/Åke-runnqvist>   [a bf:Person ;
 rdf:label "Runnquist Åke, 1919-1991" ] ;
@@ -44,7 +45,7 @@ bf:extent "122 sidor" ;
 bf:illustrativeContent "illustrationer (vissa i färg)" ;
 kbmarc:storlek "25 cm" ;
 bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1049> ;
-bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+
 bf:media  <http://rdaregistry.info/termList/RDAMediaType/1007> ;
 kbmarc:245c "i översättning av Åke Runnquist ; med illustrationer av Tove Jansson" ;
 bf:identifiedBy [ a bf:Isbn ;
