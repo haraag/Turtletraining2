@@ -1,5 +1,5 @@
 prefix bf: <http://id.loc.gov/ontologies/bibframe>
-prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix lcrel:  <http://id.loc.gov/relators>
 prefix lclang: <http://id.loc.gov/vocabulary/language>
 prefix kbmarc: <http://id.kb.se/marc>
@@ -9,7 +9,32 @@ base <http://bibliotek.se>
 </work/Alice-i-underlandet> a bf:Text ;
 	bf:title "Alice i underlandet"@sv ;
 	bf:translationOf </bok/Alice-in-Wonderland> ;
-	bf:contribution  [ a bf:Contribution , kbmarc:MainEntry ;
+	bf:contribution  [ a bf:Contribution ;
      bf:agent </person/Åke-runnqvist> ;
-   	bf:role lcrel:trl ] ;                
-	bf:language lclang:swe .
+   	bf:role lcrel:trl ] ; 
+	bf:contribution	[a bf:Contribution ;
+         bf:agent </person/tove-jansson> ;
+         bf:role lcrel:ill ] ;
+	bf:language lclang:swe ;
+
+</person/Åke-runnqvist>   [a bf:Person ;
+rdfs:label "Runnquist Åke, 1919-1991" ] ;
+</person/tove-jansson> [ a bf:Person ;
+rdfs:label "Jansson Tove, 1914-2001" ];
+bf:subject </subject-barn/Flickor> , </subject-barn/Drömmar> ,
+</subject-barn/Parallella-världar> , </subject-barn/Fantasiresor> ,
+</subject-barn/Fantasidjur> , </subject-saogf/Kapitelböcker> ,
+</subject-saogf/Barn-och-ungdomslitteratur> ;
+
+#Börjar nu på Instancedel
+ bf:provisionActivity [a bf:Publication ; 
+           rdfs:label "Bonnier Carlsen"  ;
+           bf:place "Stockholm" ;
+		bf:date "2016" ] ;
+bf:provisionActivity [a bf:Production ;
+          bf:place "Lettland" ;
+          bf:date "2016" ] ;
+bf:extent "122 sidor" ;
+bf:illustrativeContent "illustrationer (vissa i färg)" ;
+kbmarc:storlek "25 cm" ;
+.
