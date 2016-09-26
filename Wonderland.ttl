@@ -1,5 +1,5 @@
 prefix bf: <http://id.loc.gov/ontologies/bibframe>
-prefix rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix lcrel:  <http://id.loc.gov/relators>
 prefix lclang: <http://id.loc.gov/vocabulary/language>
 prefix kbmarc: <http://id.kb.se/marc>
@@ -22,9 +22,9 @@ base <http://bibliotek.se>
 	bf:language lclang:swe ;
 
 </person/Åke-runnqvist>   [a bf:Person ;
-rdfs:label "Runnquist Åke, 1919-1991" ] ;
+rdf:label "Runnquist Åke, 1919-1991" ] ;
 </person/tove-jansson> [ a bf:Person ;
-rdfs:label "Jansson Tove, 1914-2001" ];
+rdf:label "Jansson Tove, 1914-2001" ];
 bf:subject </subject-barn/Flickor> , </subject-barn/Drömmar> ,
 </subject-barn/Parallella-världar> , </subject-barn/Fantasiresor> ,
 </subject-barn/Fantasidjur> , </subject-saogf/Kapitelböcker> ,
@@ -34,7 +34,7 @@ kbmarc:1upplaga "Första svenska upplaga i denna översättning" ;
 
 #Börjar nu på Instancedel
  bf:provisionActivity [a bf:Publication ; 
-           rdfs:label "Bonnier Carlsen"  ;
+           rdf:label "Bonnier Carlsen"  ;
            bf:place "Stockholm" ;
 		bf:date "2016" ] ;
 bf:provisionActivity [a bf:Production ;
@@ -47,4 +47,7 @@ bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1049> ;
 bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
 bf:media  <http://rdaregistry.info/termList/RDAMediaType/1007> ;
 kbmarc:245c "i översättning av Åke Runnquist ; med illustrationer av Tove Jansson" ;
+bf:identifiedBy [ a bf:Isbn ;
+                    rdf:value "9789163885921" ; 
+                    rdf:label "inbunden" ] ;
 .
