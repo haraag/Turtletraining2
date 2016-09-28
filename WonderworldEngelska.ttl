@@ -47,13 +47,11 @@ a bf:StillImage ;
 bf:language lclang:eng ;
 bf:descriptionLanguage lclang:swe ;
 
-bf:provisionActivity [ a bf:Publication ;
-                       a bf:agent ; 
-						a bf:Organization ;
-           rdfs:label "Armada" ] ;
-        [  a  bf:place rdfs:label "London" ;]
-			[ a bf:date  rdfs:label "1954" ; 
-           bf:date rdfs:label "1969" ;]
+bf:provisionActivity [ a bf:Publication ; a bf:Organization ;
+                    rdfs:label "Armada" ] ;
+        bf:place "London" ;
+	bf:date   "1954" ; 
+           bf:date  "1969" ;
 
 bf:extent "128 pages" ;
 bf:illustrativeContent "ill." ;
@@ -66,5 +64,5 @@ bf:identifiedBy [ a bf:Isbn ;
                     rdfs:value "0-00-692545-6 (pbk)" ] ; 
 bf:note "Children's stories in English,. 1837-1900 - Texts (BNB/PRECIS)"
                    
-#Ej klar
+#Finns mer att göra
 .
