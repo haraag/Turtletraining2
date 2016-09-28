@@ -26,7 +26,9 @@ bf:classification [ a bf:ClassificationDdc ;
 # Hur gör vi med ämne? - finns inte i engelsk post - dela till alla poster från svensk?
 
 # Här behövs både work och expression - så det blir flera works med relationer
-</work/Alice-in-Wonderland>  [ a bf:work ;
+</work/Alice-in-Wonderland-ill-Tenniel> 
+[ a bf:expressionOf ; 
+   bf:work </work/Alice-in-Wonderland> ] ;
 bf:contribution [a bf:agent ;
                    bf:Person 
          </aukt/John-Tenniel> ;
