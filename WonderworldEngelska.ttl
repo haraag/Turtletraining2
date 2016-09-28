@@ -37,6 +37,7 @@ rdf:label "Tenniel, John, 1820-1914" ];
 # Instance
 bf:instanceOf  </work/Alice-in-Wonderland> ;
 a bf:work ;
+
 bf:language lclang:eng ;
 bf:descriptionLanguage lclang:swe ;
 bf:provisionActivity [a bf:Publication ; 
@@ -56,5 +57,5 @@ bf:identifiedBy [ a bf:Isbn ;
                     rdf:value "0-00-692545-6 (pbk)" ] ; 
 bf:note "Children's stories in English,. 1837-1900 - Texts (BNB/PRECIS)"
                    
-
+#Ej klar
 .
