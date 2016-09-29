@@ -59,7 +59,7 @@ kbmarc:storlek "18 cm" ;
 
 bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1049> ;
 bf:media  <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-kbmarc:245c "Lewis Caroll ; with illustrations by Tenniel" ;
+bf:responsibilityStatement "Lewis Caroll ; with illustrations by Tenniel" ;
 bf:identifiedBy [ a bf:Isbn ;
                     rdfs:value "0-00-692545-6 (pbk)" ] ; 
 bf:note "Children's stories in English,. 1837-1900 - Texts (BNB/PRECIS)"
