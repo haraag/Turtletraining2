@@ -41,11 +41,14 @@ rdfs:label "Tenniel, John, 1820-1914";
 # Instance
 bf:instanceOf  </work/Alice-in-Wonderland> ;
 a bf:Text;
+bf:title [a bf:InstanceTitle ; 
+            bf:MainTitle "Alice in wonderland" ] ;
+         
 bf:instanceOf </work/Alice-in-Wonderland-ill-Tenniel> ;
 a bf:StillImage ;
 
 bf:language lclang:eng ;
-bf:descriptionLanguage lclang:swe ;
+bf:descriptionLanguage lclang:eng ;
 
 bf:provisionActivity [ a bf:Publication ; a bf:Organization ;
                     rdfs:label "Armada" ] ;
