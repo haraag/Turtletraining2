@@ -52,7 +52,7 @@ kbmarc:storlek "25 cm" ;
 bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1049> ;
 
 bf:media  <http://rdaregistry.info/termList/RDAMediaType/1007> ;
-kbmarc:245c "i översättning av Åke Runnquist ; med illustrationer av Tove Jansson" ;
+bf:responsibilityStatement "i översättning av Åke Runnquist ; med illustrationer av Tove Jansson" ;
 bf:identifiedBy [ a bf:Isbn ;
                     rdf:value "9789163885921" ; 
                     rdf:label "inbunden" ] ;
