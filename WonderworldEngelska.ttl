@@ -51,10 +51,10 @@ bf:language lclang:eng ;
 bf:descriptionLanguage lclang:eng ;
 
 bf:provisionActivity [ a bf:Publication ; a bf:Organization ;
-                    rdfs:label "Armada" ] ;
+                    rdfs:label "Armada"  ;
         bf:place "London" ;
 	bf:date   "1954" ; 
-           bf:date  "1969" ;
+           bf:date  "1969" ];
 
 bf:extent "128 pages" ;
 bf:illustrativeContent "ill." ;
