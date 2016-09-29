@@ -10,10 +10,11 @@ prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType>
 base <http://bibliotek.se>
 
 </work/Alice-in-Wonderland> a  bf:Text ;
-bf:Title "Alice in Wonderland" @en  ;
-bf:contribution [ a bf:agent ;
-         bf:Person 
-                 </aukt/Lewis-Carroll> ;
+bf:title [a bf:WorkTitle ;
+            bf:mainTitle "Alice in Wonderland" @en ] ;
+bf:contribution [ a bf:Contribution ;
+                  a   bf:agent   ;
+        bf:person </aukt/Lewis-Carroll> ;
                    bf:role lcrel:auth ] ;
 
  
