@@ -24,7 +24,7 @@ base <http://bibliotek.se>
          bf:agent </person/tove-jansson> ;
          bf:role lcrel:ill ] ] ;
 	bf:language lclang:swe ;
-bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+bf:content rdaco:1020 ;
     bf:partOf </expression/Alice-i-underlandet-Jansson-Runnqvist> ;
 
 </person/Åke-runnqvist>   [a bf:Person ;
@@ -49,9 +49,8 @@ bf:provisionActivity [a bf:Production ;
 bf:extent "122 sidor" ;
 bf:illustrativeContent "illustrationer (vissa i färg)" ;
 kbmarc:storlek "25 cm" ;
-bf:carrier <http://rdaregistry.info/termList/RDACarrierType/1049> ;
-
-bf:media  <http://rdaregistry.info/termList/RDAMediaType/1007> ;
+bf:carrier rdaco:1049 ;
+bf:media  rdamt:1007 ;
 bf:responsibilityStatement "i översättning av Åke Runnquist ; med illustrationer av Tove Jansson" ;
 bf:identifiedBy [ a bf:Isbn ;
                     rdf:value "9789163885921" ; 
