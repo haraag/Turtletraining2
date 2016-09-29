@@ -11,16 +11,21 @@ prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType>
 base <http://bibliotek.se>
 
 </work/Alice-i-underlandet> a bf:Text ;
-	bf:title "Alice i underlandet"@sv ;
+	bf:title [a bf:WorkTitle ; 
+                bf:mainTitle "Alice i underlandet"@sv] ;
 	bf:translationOf </bok/Alice-in-Wonderland> ;
 	bf:contribution  [ a bf:Contribution ;
      bf:agent </person/Åke-runnqvist> ;
-   	bf:role lcrel:trl ] ; 
+   	bf:role lcrel:trl ] ;
+
+#för Illustrationer
+</work/Alice-i-underlandet-illustrationer> [a bf:StillImage ;
 	bf:contribution	[a bf:Contribution ;
          bf:agent </person/tove-jansson> ;
-         bf:role lcrel:ill ] ;
+         bf:role lcrel:ill ] ] ;
 	bf:language lclang:swe ;
 bf:content <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    bf:partOf </expression/Alice-i-underlandet-Jansson-Runnqvist> ;
 
 </person/Åke-runnqvist>   [a bf:Person ;
 rdf:label "Runnquist Åke, 1919-1991" ] ;
