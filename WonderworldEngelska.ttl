@@ -6,13 +6,14 @@ prefix kbmarc: <http://id.kb.se/marc>
 prefix rdaco: <http://www.rdaregistry.info/termList/>
 prefix rdact: <http://rdaregistry.info/termList/RDACarrierType>
 prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 base <http://bibliotek.se>
 
 </work/Alice-in-Wonderland> a  bf:Text ;
 bf:title [a bf:WorkTitle ;
             bf:mainTitle "Alice in Wonderland" @en ] ;
-bf:contribution [ a bf:Contribution ;
+bf:contribution [ a bf:Contribution , kbmarc:MainEntry ;
                   a   bf:agent   ;
         bf:person </aukt/Lewis-Carroll> ;
                    bf:role lcrel:auth ] ;
@@ -22,14 +23,17 @@ bf:contribution [ a bf:Contribution ;
 rdfs:label "Carrol, Lewis, 1832-1898" ] ;
 
 bf:content rdaco:1020  ;
+bf:intendedAudience </Audience/barn> ;
 bf:classification [ a bf:ClassificationDdc ; 
                       rdfs:label "823.8" ] ;
+bf:classification	</sab/He,u/version7>  ;
 # Hur gör vi med ämne? - finns inte i engelsk post - dela till alla poster från svensk?
+# Förstår inte ^^xsd:gYear  i bf:originDate "1866"^^xsd:gYear ;
 
 
 # Här behövs både work och expression - så det blir flera works med relationer
 </work/Alice-in-Wonderland-ill-Tenniel> [ a bf:StillImage ; 
-                                            a bf:expressionOf ; 
+                                            a bf:expressionOf , bf:partOf ; 
                                              bf:work </work/Alice-in-Wonderland> ] ;
 bf:contribution [a bf:Contribution ; 
                    a bf:agent ;
@@ -48,14 +52,16 @@ bf:title [a bf:InstanceTitle ;
 bf:instanceOf </work/Alice-in-Wonderland-ill-Tenniel> ;
 a bf:StillImage ;
 
+bf:hasPart  </work/Alice-in-Wonderland> , </work/Alice-in-Wonderland-ill-Tenniel> ;
+
 bf:language lclang:eng ;
 bf:descriptionLanguage lclang:eng ;
 
 bf:provisionActivity [ a bf:Publication ; a bf:Organization ;
                     rdfs:label "Armada"  ;
         bf:place "London" ;
-	bf:date   "1954" ; 
-           bf:date  "1969" ];
+	bf:date   "1954"^^xsd:gYear ; 
+           bf:date  "1969"^^xsd:gYear ];
 
 bf:extent "128 pages" ;
 bf:illustrativeContent "ill." ;
