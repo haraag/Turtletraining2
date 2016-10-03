@@ -28,7 +28,7 @@ bf:classification [ a bf:ClassificationDdc ;
                       rdfs:label "823.8" ] ;
 bf:classification	</sab/He,u/version7>  ;
 # Hur gör vi med ämne? - finns inte i engelsk post - dela till alla poster från svensk?
-# Förstår inte ^^xsd:gYear  i bf:originDate "1866"^^xsd:gYear ;
+# Förstår inte varifrån kommer ^^xsd:gYear  i bf:originDate "1866"^^xsd:gYear ;
 
 
 # Här behövs både work och expression - så det blir flera works med relationer
