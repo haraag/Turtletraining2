@@ -31,6 +31,7 @@ bf:classification	</sab/He,u/version7>  ;
 # Förstår inte varifrån kommer ^^xsd:gYear  i bf:originDate "1866"^^xsd:gYear ;
 
 
+
 # Här behövs både work och expression - så det blir flera works med relationer
 </work/Alice-in-Wonderland-ill-Tenniel> [ a bf:StillImage ; 
                                             a bf:expressionOf , bf:partOf ; 
@@ -61,7 +62,7 @@ bf:provisionActivity [ a bf:Publication ; a bf:Organization ;
                     rdfs:label "Armada"  ;
         bf:place "London" ;
 	bf:date   "1954"^^xsd:gYear ; 
-           bf:date  "1969"^^xsd:gYear ];
+           bf:date  "1969"^^xsd:gYear ] ;
 
 bf:extent "128 pages" ;
 bf:illustrativeContent "ill." ;
@@ -72,7 +73,31 @@ bf:media  rdamt:1007 ;
 bf:responsibilityStatement "Lewis Caroll ; with illustrations by Tenniel" ;
 bf:identifiedBy [ a bf:Isbn ;
                     rdfs:value "0-00-692545-6 (pbk)" ] ; 
-bf:note "Children's stories in English,. 1837-1900 - Texts (BNB/PRECIS)"
+bf:note "Children's stories in English, 1837-1900 - Texts (BNB/PRECIS)"
                    
-#Finns mer att göra
+#Nytt verk
+</work/Through the looking-glass> a  bf:Text ;
+bf:title [a bf:WorkTitle ;
+            bf:mainTitle "Through the looking-glass" @en ] ;
+bf:contribution [ a bf:Contribution , kbmarc:MainEntry ;
+                  a   bf:agent   ;
+        bf:person </aukt/Lewis-Carroll> ;
+                   bf:role lcrel:auth ] ;
+
+ 
+</aukt/Lewis-Carroll>   [a bf:Person ;
+rdfs:label "Carrol, Lewis, 1832-1898" ] ;
+
+bf:content rdaco:1020  ;
+bf:intendedAudience </Audience/barn> ;
+bf:classification [ a bf:ClassificationDdc ; 
+                      rdfs:label "823.8" ] ;
+bf:classification	</sab/He,u/version7>  ;
+
+
+
+
+
+
+
 .
