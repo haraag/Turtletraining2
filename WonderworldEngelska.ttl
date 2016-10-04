@@ -73,16 +73,4 @@ bf:media  rdamt:1007 ;
 bf:responsibilityStatement "Lewis Caroll ; with illustrations by Tenniel" ;
 bf:identifiedBy [ a bf:Isbn ;
                     rdfs:value "0-00-692545-6 (pbk)" ] ; 
-bf:note "Children's stories in English, 1837-1900 - Texts (BNB/PRECIS)" ;
-
-
-
-                   
-
-
-
-
-
-
-
-.
+bf:note "Children's stories in English, 1837-1900 - Texts (BNB/PRECIS)" .
