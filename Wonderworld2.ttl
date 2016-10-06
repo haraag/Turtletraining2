@@ -25,7 +25,8 @@ bf:copyrightDate "cop. 1994" ;
 bf:extent "xvi, 339, [5] s." ;
 bf:identifiedBy [ a kbmarc:035 ;
                     rdfs:value "9925083001" ;
-                        ;
+bf:contribution [a bf:agent ; 
+                   bf:role lcrel:aui ;
                         
                         
                         
