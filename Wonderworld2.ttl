@@ -29,7 +29,7 @@ bf:contribution </person/Paglia-Camille>;
                  a bf:agent ; 
 				a bf:Person ;
              bf:role lcrel:oth  ;
-# lcrel:aui kanske mer exakt? ;
+# lcrel:aui kanske mer exakt? Kommer att finnas mycket si så där i ;
 bf:illustrativeContent "ill." ;
 
 bf:carrier rdaco:1049 ;
