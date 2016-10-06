@@ -30,7 +30,8 @@ bf:contribution </person/Paglia-Camille>;
 				a bf:Person ;
              bf:role lcrel:oth  ;
 # lcrel:aui kanske mer exakt? Kommer att finnas mycket si så där i ;
-bf:illustrativeContent "ill." ;
+bf:illustrativeContent [ 
+                    rdfs:label "ill." ];
 
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
