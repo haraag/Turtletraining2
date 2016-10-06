@@ -19,8 +19,14 @@ bf:title [a bf:Title ;
             bf:subTitle "and what Alice found there"] ;
 bf:responsibilityStatement "Lewis Carroll ; introduction by Camille Plagia ; illustrations by John Tenniel" ;
 bf:provisionActivity [a bf:Publication ;
-                        bf:Agent </organization/Quality-paperbacks> ;
-                        rdfs:label "Quality paperback" ;
+                        bf:agent </organization/Quality-paperbacks>  ;
+                        bf:role lcrel:pbl ] ;
+bf:copyrightDate "cop. 1994" ;
+bf:extent "xvi, 339, [5] s." ;
+bf:identifiedBy [ a kbmarc:035 ;
+                    rdfs:value "9925083001" ;
+                        ;
+                        
                         
                         
                        
