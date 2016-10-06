@@ -28,7 +28,12 @@ bf:identifiedBy [ a kbmarc:035 ;
 bf:contribution </person/Paglia-Camille>;
                  a bf:agent ; 
 				a bf:Person ;
-             bf:role lcrel:aui  ;
+             bf:role lcrel:oth  ;
+# lcrel:aui kanske mer exakt? ;
+bf:illustrativeContent "ill." ;
+
+bf:carrier rdaco:1049 ;
+bf:media  rdamt:1007 ;
                         
                         
                         
