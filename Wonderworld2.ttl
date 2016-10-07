@@ -10,7 +10,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 base <http://bibliotek.se>
 
-# Ny instance 
+# Ny instance 1
 <instance/Alice-in-Wonderland-Through-the-looking-glass-Tenniel> a bf:Print ;
 bf:instanceOf  </work/Alice-in-Wonderland-Through-the-looking-glass> ;
 # Lyckades inte lägga in utan uri
@@ -41,11 +41,7 @@ bf:contribution </person/Tenniel-John> ;
 
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
-                   
-                        
-                        
-                        
-                       
-                        
+                    
 
-.
+                        
+ .
