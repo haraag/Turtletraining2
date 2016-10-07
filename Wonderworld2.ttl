@@ -53,6 +53,10 @@ bf:provisionActivity [a bf:Publication ;
                         bf:agent </organization/Wordsworth> ;
                         bf:date "1993" ;
                      bf:Place "Ware" ] ;
+bf:title [a bf:Title ;
+            bf:mainTitle "Alice in wonderworld" ;
+			bf:subTitle "and through the looking-glass" ;              
+               
 bf:extent "253 s." ;
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
