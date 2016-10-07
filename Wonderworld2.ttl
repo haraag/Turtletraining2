@@ -58,6 +58,7 @@ bf:title [a bf:Title ;
 			bf:subTitle "and through the looking-glass" ;              
                
 bf:extent "253 s." ;
+bf:illustrativeContent [   ] ;
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
 # 740 0  a and through the looking-glass - här har undertiteln lagts in som en sökbar titel
