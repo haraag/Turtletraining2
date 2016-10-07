@@ -17,11 +17,13 @@ bf:instanceOf  </work/Alice-in-Wonderland-Through-the-looking-glass> ;
 bf:title [a bf:Title ;
             bf:mainTitle "Alice in wonderland and Through the looking-glass" ;
             bf:subTitle "and what Alice found there"] ;
+bf:hasPart  <work/Alice-in-wonderworld> , </work/Through-the-looking-glass> ;
 bf:responsibilityStatement "Lewis Carroll ; introduction by Camille Plagia ; illustrations by John Tenniel" ;
 bf:provisionActivity [a bf:Publication ;
                         bf:agent </organization/Quality-paperbacks>  ;
                         bf:role lcrel:pbl;
-                     bf:date "1994"] ;
+                     bf:date "1994" ;
+                     bf:place "London" ] ;
 bf:copyrightDate "cop. 1994" ;
 # CopyrightDate ska ligga utanför provisionActivity klammer (Båda ska väl inte vara samtdigt
 bf:extent "xvi, 339, [5] s." ;
@@ -42,6 +44,18 @@ bf:contribution </person/Tenniel-John> ;
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
                     
-
-                        
- .
+#Ny instance 2
+</instance/Alice-in-Wonderland-Through-the-looking-glass-1993> bf:Print ;
+bf:instanceOf </work/Alice-in-Wonderland-Through-the-looking-glass> ;
+bf:hasPart  <work/Alice-in-wonderworld> , </work/Through-the-looking-glass> ;
+bf:responsibilityStatement "Lewis Carroll" ;
+bf:provisionActivity [a bf:Publication ;
+                        bf:agent </organization/Wordsworth> ;
+                        bf:date "1993" ;
+                     bf:Place "Ware" ] ;
+bf:extent "253 s." ;
+bf:carrier rdaco:1049 ;
+bf:media  rdamt:1007 ;
+# 740 0  a and through the looking-glass - här har undertiteln lagts in som en sökbar titel
+# Bättre vore att göra titeln sökbar genom att länka till verket Through the ....
+.
