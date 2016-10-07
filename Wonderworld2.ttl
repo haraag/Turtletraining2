@@ -12,16 +12,18 @@ base <http://bibliotek.se>
 
 # Ny instance 
 <instance/Alice-in-Wonderland-Through-the-looking-glass-Tenniel> a bf:Print ;
-bf:instanceOf <work/Alice-in-wonderworld> , </work/Through-the-looking-glass> , 
-</work/Alice-in-Wonderland-ill-Tenniel> ;
+bf:instanceOf  </work/Alice-in-Wonderland-Through-the-looking-glass> ;
+# Lyckades inte lägga in utan uri
 bf:title [a bf:Title ;
             bf:mainTitle "Alice in wonderland and Through the looking-glass" ;
             bf:subTitle "and what Alice found there"] ;
 bf:responsibilityStatement "Lewis Carroll ; introduction by Camille Plagia ; illustrations by John Tenniel" ;
 bf:provisionActivity [a bf:Publication ;
                         bf:agent </organization/Quality-paperbacks>  ;
-                        bf:role lcrel:pbl ] ;
+                        bf:role lcrel:pbl;
+                     bf:date "1994"] ;
 bf:copyrightDate "cop. 1994" ;
+# CopyrightDate ska ligga utanför provisionActivity klammer (Båda ska väl inte vara samtdigt
 bf:extent "xvi, 339, [5] s." ;
 bf:identifiedBy [ a kbmarc:035 ;
                     rdfs:value "9925083001" ;
@@ -30,11 +32,16 @@ bf:contribution </person/Paglia-Camille>;
 				a bf:Person ;
              bf:role lcrel:oth  ;
 # lcrel:aui kanske mer exakt? Kommer att finnas mycket si så där i ;
-bf:illustrativeContent [ 
-                    rdfs:label "ill." ];
+bf:illustrativeContent [   ];
+             
+bf:contribution </person/Tenniel-John> ;
+                    a bf:agent ;
+                    a bf:Person ;
+                    bf:role lcrel:ill  ;
 
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
+                   
                         
                         
                         
