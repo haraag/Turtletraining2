@@ -28,7 +28,7 @@ bf:copyrightDate "cop. 1994" ;
 # CopyrightDate ska ligga utanför provisionActivity klammer (Båda ska väl inte vara samtdigt
 bf:extent "xvi, 339, [5] s." ;
 bf:identifiedBy [ a kbmarc:035 ;
-                    rdfs:value "9925083001" ;
+                    rdfs:value "9925083001" ] ;
 bf:contribution </person/Paglia-Camille>;
                  a bf:agent ; 
 				a bf:Person ;
