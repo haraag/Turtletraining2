@@ -40,7 +40,7 @@ bf:subject </subject-barn/Flickor> , </subject-barn/Drömmar> ,
 </subject-barn/Parallella-världar> , </subject-barn/Fantasiresor> ,
 </subject-barn/Fantasidjur> , </subject-saogf/Kapitelböcker> ,
 </subject-saogf/Barn-och-ungdomslitteratur> ;
-kbmarc:1upplaga "Första svenska upplaga i denna översättning" ;
+kbmarc:1upplaga "Första svenska upplaga i denna översättning" ; .
 #kbmarc:1upplaga borde hanteras som annat än Notes.Dessutom, behöver fasta fält. Fungerar med bf:originDate? 
     
 # Förutsätter att det finns "auktdata/poster"  Annars måste nedanstående finns med
@@ -49,3 +49,23 @@ kbmarc:1upplaga "Första svenska upplaga i denna översättning" ;
         
 #</person/tove-jansson>  a bf:Person ;
 #rdfs:label "Jansson Tove, 1914-2001" ;
+#Börjar nu på Instancedel
+</instance/alice-i-underlandet-runnqvist-illustrerad>  a bf:Print ;
+      
+        bf:provisionActivity [a bf:Publication ; 
+           rdfs:label "Bonnier Carlsen"  ;
+           bf:place "Stockholm" ;
+		bf:date "2016"^^xsd:gYear ] ;
+bf:provisionActivity [a bf:Production ;
+          bf:place "Lettland" ;
+          bf:date "2016"^^xsd:gYear ] ;
+bf:extent "122 sidor" ;
+bf:illustrativeContent [  ] , "illustrationer (vissa i färg)" ;
+kbmarc:storlek "25 cm" ;
+bf:carrier rdaco:1049 ;
+bf:media  rdamt:1007 ;
+bf:responsibilityStatement "i översättning av Åke Runnquist ; med illustrationer av Tove Jansson" ;
+bf:identifiedBy [ a bf:Isbn ;
+                    rdfs:value "9789163885921" ; 
+                    rdfs:label "inbunden" ] ; 
+.
