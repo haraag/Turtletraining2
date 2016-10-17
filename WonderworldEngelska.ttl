@@ -75,6 +75,7 @@ bf:provisionActivity [ a bf:Publication ; a bf:Organization ;
 
 bf:extent "128 pages" ;
 bf:illustrativeContent [  ] ,"ill." ;
+# Finns säkert data vi vill ha med, men  det vanligast är väl "ill." som vi inte behöver. Kan vi tvätta data?
 kbmarc:storlek "18 cm" ;
 
 bf:carrier rdact:1049  ;
