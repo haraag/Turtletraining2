@@ -17,6 +17,8 @@ bf:contribution [ a bf:Contribution , kbmarc:MainEntry ;
                   a   bf:agent   ;
         bf:person </aukt/Lewis-Carroll> ;
                    bf:role lcrel:auth ] ;
+bf:originDate "1866"^^xsd:gYear ;
+# Hittar inte var "^^" kommer ifrån i  ^^xsd:gYear 
 
  
 </aukt/Lewis-Carroll>   [a bf:Person ;
@@ -28,7 +30,10 @@ bf:classification [ a bf:ClassificationDdc ;
                       rdfs:label "823.8" ] ;
 bf:classification	</sab/He,u/version7>  ;
 # Hur gör vi med ämne? - finns inte i engelsk post - dela till alla poster från svensk?
-# Förstår inte varifrån kommer ^^xsd:gYear  i bf:originDate "1866"^^xsd:gYear ;
+bf:language lclang:eng ;
+
+# + Adminmetadat
+
 
 
 
@@ -43,6 +48,8 @@ bf:contribution [a bf:Contribution ;
 
 </aukt/John-Tenniel> bf:Person ;
 rdfs:label "Tenniel, John, 1820-1914";
+# Vi behöver bestämma hur vi ska hantera illustrerade verk - illustrationer som verk,
+# illustrerade verk som en expressionOf ett verk..... - Här modellerat som ett eget verk
 
 # Instance
 bf:instanceOf  </work/Alice-in-Wonderland> ;
@@ -56,6 +63,8 @@ a bf:StillImage ;
 bf:hasPart  </work/Alice-in-Wonderland> , </work/Alice-in-Wonderland-ill-Tenniel> ;
 
 bf:language lclang:eng ;
+# Dubblering - finns i work 
+
 bf:descriptionLanguage lclang:eng ;
 
 bf:provisionActivity [ a bf:Publication ; a bf:Organization ;
@@ -65,7 +74,7 @@ bf:provisionActivity [ a bf:Publication ; a bf:Organization ;
            bf:date  "1969"^^xsd:gYear ] ;
 
 bf:extent "128 pages" ;
-bf:illustrativeContent "ill." ;
+bf:illustrativeContent [  ] ,"ill." ;
 kbmarc:storlek "18 cm" ;
 
 bf:carrier rdact:1049  ;
