@@ -12,7 +12,7 @@ base <http://bibliotek.se>
 
 # Ny instance 1
 <instance/Alice-in-Wonderland-Through-the-looking-glass-Tenniel> a bf:Print ;
-bf:instanceOf  </work/Alice-in-Wonderland-Through-the-looking-glass> ;
+bf:instanceOf  </work/Alice-in-Wonderland-Tenniel> , </work/Through-the-looking-glass-Tenniel> ;
 # Lyckades inte lägga in utan uri
 bf:title [a bf:Title ;
             bf:mainTitle "Alice in wonderland and Through the looking-glass" ;
