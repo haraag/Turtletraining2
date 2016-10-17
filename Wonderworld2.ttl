@@ -10,8 +10,8 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 base <http://bibliotek.se>
 
-# Ny instance 1
-<instance/Alice-in-Wonderland-Through-the-looking-glass-Tenniel> a bf:Print ;
+# Ny instance - två verk
+<instance/Alice-in-Wonderland-Through-the-looking-glass-Tenniel-1994> a bf:Print ;
 bf:instanceOf  </work/Alice-in-Wonderland-Tenniel> , </work/Through-the-looking-glass-Tenniel> ;
 # Lyckades inte lägga in utan uri
 bf:title [a bf:Title ;
@@ -22,7 +22,7 @@ bf:responsibilityStatement "Lewis Carroll ; introduction by Camille Plagia ; ill
 bf:provisionActivity [a bf:Publication ;
                         bf:agent </organization/Quality-paperbacks>  ;
                         bf:role lcrel:pbl;
-                     bf:date "1994" ;
+                     bf:date "1994"^^xsd:gYear ;
                      bf:place "London" ] ;
 bf:copyrightDate "cop. 1994" ;
 # CopyrightDate ska ligga utanför provisionActivity klammer (Båda ska väl inte vara samtdigt
@@ -33,13 +33,10 @@ bf:contribution </person/Paglia-Camille>;
                  a bf:agent ; 
 				a bf:Person ;
              bf:role lcrel:oth  ;
-# lcrel:aui kanske mer exakt? Kommer att finnas mycket si så där i ;
+# lcrel:aui kanske mer exakt? Kommer att finnas mycket si så där i.
+# Verkar onödigt/omständigt att betrakta alla delar i en bok som ett verk 
 bf:illustrativeContent [   ];
              
-bf:contribution </person/Tenniel-John> ;
-                    a bf:agent ;
-                    a bf:Person ;
-                    bf:role lcrel:ill  ;
 
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
@@ -61,6 +58,9 @@ bf:extent "253 s." ;
 bf:illustrativeContent [   ] ;
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
+bf:seriesStatement "Wordsworth classics" ;  
+# Hur använda bf:hasSeries ?
 # 740 0  a and through the looking-glass - här har undertiteln lagts in som en sökbar titel
 # Bättre vore att göra titeln sökbar genom att länka till verket Through the ....
+# Illustrerad men utan angiven illustratör
 .
