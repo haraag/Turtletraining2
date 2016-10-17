@@ -5,6 +5,7 @@ prefix kbmarc: <http://id.kb.se/marc>
 prefix rdaco: <http://www.rdaregistry.info/termList/>
 prefix rdact: <http://rdaregistry.info/termList/RDACarrierType>
 prefix rdamt: <http://rdaregistry.info/termList/RDAMediaType>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
 
 base <http://bibliotek.se>
@@ -54,12 +55,12 @@ rdfs:label "Jansson Tove, 1914-2001" ];
  bf:provisionActivity [a bf:Publication ; 
            rdfs:label "Bonnier Carlsen"  ;
            bf:place "Stockholm" ;
-		bf:date "2016" ] ;
+		bf:date "2016"^^xsd:gYear ] ;
 bf:provisionActivity [a bf:Production ;
           bf:place "Lettland" ;
-          bf:date "2016" ] ;
+          bf:date "2016"^^xsd:gYear ] ;
 bf:extent "122 sidor" ;
-bf:illustrativeContent "illustrationer (vissa i färg)" ;
+bf:illustrativeContent [  ] , "illustrationer (vissa i färg)" ;
 kbmarc:storlek "25 cm" ;
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
