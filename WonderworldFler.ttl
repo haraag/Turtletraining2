@@ -1,7 +1,11 @@
-
-
-
-
+</work/Alice-in-Wonderland> a  bf:Text ;
+bf:title [a bf:WorkTitle ;
+            bf:mainTitle "Alice in Wonderland" @en ] ;
+bf:contribution [ a bf:Contribution , kbmarc:MainEntry ;
+                  a   bf:agent   ;
+        bf:person </aukt/Lewis-Carroll> ;
+                   bf:role lcrel:auth ] ;
+bf:originDate "1865"^^xsd:gYear ;
 
 
 
@@ -27,4 +31,4 @@
 700	1 2	a Carroll, Lewis,d 1832-1898.t Through the looking-glass0 44914
 700	1 2	a Carroll, Lewis,d 1832-1898.t Hunting of the Snark0 44914
 700	1 	a Tenniel, John,c Sir,d 1820-19144 ill0 96337
-# Utifrån 700 som har författare-titel kan rudimentära verksposter göras. Här tre verk av 
+# Utifrån 700 som har författare-titel kan rudimentära verksposter göras. Här tre verk av
