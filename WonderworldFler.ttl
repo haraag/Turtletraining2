@@ -33,6 +33,11 @@ bf:role lcrel:auth ] ;
 #författare vid 700 för författare-titel
 ;
 
+#Instance
+</instance/Alice-in-wonderland-and-other-favorites-1951>  a bf:Print ;
+a bf:instanceOf </work/Alice-in-Wonderland>  , </work/Hunting-of-the-snark> ;
+
+
 # 000		03134camaa22004817a 4500
 #001		11743886
 #003		SE-LIBR
