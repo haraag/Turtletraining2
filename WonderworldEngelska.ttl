@@ -17,7 +17,7 @@ bf:contribution [ a bf:Contribution , kbmarc:MainEntry ;
                   a   bf:agent   ;
         bf:person </aukt/Lewis-Carroll> ;
                    bf:role lcrel:auth ] ;
-bf:originDate "1866"^^xsd:gYear ;
+bf:originDate "1865"^^xsd:gYear ;
 # Hittar inte var "^^" kommer ifrån i  ^^xsd:gYear 
 
  
