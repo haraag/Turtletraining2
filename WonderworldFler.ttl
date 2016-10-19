@@ -22,21 +22,21 @@ bf:originDate "1865"^^xsd:gYear ;
 # Räknar med att vi kommer att ha en manuellt omsedd auktpost på verket
 .
 
-</work/Hunting-of-the-snark> a bf:Text ;
-bf:title [a bf:WorkTitle ;
-            bf:MainTitle "The hunting of the Snark" ] ;
-bf:contribution [a bf:Contribution , kbmarc:MainEntry ;
-a bf:agent ;
-bf:person </person/lewis-Carrol> ;
-bf:role lcrel:auth ] ; 
-# Gjort efter 700-fältet. Roll finns inte med, men vi kan väl utgå från rollen 
-#författare vid 700 för författare-titel
-;
+
 
 #Instance
 </instance/Alice-in-wonderland-and-other-favorites-1951>  a bf:Print ;
-a bf:instanceOf </work/Alice-in-Wonderland>  , </work/Hunting-of-the-snark> ;
-
+bf:instanceOf </work/Alice-in-Wonderland> , </work/Hunting-of-the-snark> ;
+bf:title [a bf:Title ;
+            bf:mainTitle "Alice in wonderland and other favorites"] ;
+            
+bf:hasPart  <work/Alice-in-wonderworld> , </work/Through-the-looking-glass> ,</work/Hunting-of-the-snark> ;
+bf:responsibilityStatement "Lewis Carroll ; with 92 ill. by sir John Tenniel." ;
+bf:provisionActivity [a bf:Publication ;
+                        bf:agent </organization/Pocket-books>  ;
+                        bf:role lcrel:pbl;
+                     bf:date "1951"^^xsd:gYear ;
+                     bf:place "New York" ] ;
 
 # 000		03134camaa22004817a 4500
 #001		11743886
