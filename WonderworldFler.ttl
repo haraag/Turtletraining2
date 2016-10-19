@@ -19,11 +19,19 @@ bf:contribution [ a bf:Contribution , kbmarc:MainEntry ;
         bf:person </aukt/Lewis-Carroll> ;
                    bf:role lcrel:auth ] ;
 bf:originDate "1865"^^xsd:gYear ;
-
+# Räknar med att vi kommer att ha en manuellt omsedd auktpost på verket
 .
 
-
-
+</work/Hunting-of-the-snark> a bf:Text ;
+bf:title [a bf:WorkTitle ;
+            bf:MainTitle "The hunting of the Snark" ] ;
+bf:contribution [a bf:Contribution , kbmarc:MainEntry ;
+a bf:agent ;
+bf:person </person/lewis-Carrol> ;
+bf:role lcrel:auth ] ; 
+# Gjort efter 700-fältet. Roll finns inte med, men vi kan väl utgå från rollen 
+#författare vid 700 för författare-titel
+;
 
 # 000		03134camaa22004817a 4500
 #001		11743886
@@ -45,3 +53,4 @@ bf:originDate "1865"^^xsd:gYear ;
 #700	1 2	a Carroll, Lewis,d 1832-1898.t Hunting of the Snark0 44914
 #700	1 	a Tenniel, John,c Sir,d 1820-19144 ill0 96337
 # Utifrån 700 som har författare-titel kan rudimentära verksposter göras. Här tre verk av
+.
