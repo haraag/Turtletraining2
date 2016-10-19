@@ -1,1 +1,30 @@
 
+
+
+
+
+
+
+
+
+
+# 000		03134camaa22004817a 4500
+001		11743886
+003		SE-LIBR
+005		20151117134420.0
+008		100128s1951 xxu j 000 0 eng c
+035	 	a (OCoLC)ocn249633477
+040	 	a GyGoGBVe rakwbb gerc GBVCPd Sbi
+035	 	a (OCoLC)249633477
+100	1 	a Carroll, Lewis,d 1832-18980 44914
+245	1 0	a Alice in wonderland and other favorites /c Lewis Carroll ; with 92 ill. by sir John Tenniel.
+250	 	a 2. printing.
+260	 	a New York :b Pocket Books,c 1951.
+300	 	a 308 s. :b Ill.
+440	 2	a A genuine pocket book classic ;v 835
+505	8 	a Alice's adventures in Wonderland. -- Through the looking-glass. -- The hunting of the Snark.
+700	1 2	a Carroll, Lewis,d 1832-1898.t Alice's adventures in Wonderland0 449140 389952
+700	1 2	a Carroll, Lewis,d 1832-1898.t Through the looking-glass0 44914
+700	1 2	a Carroll, Lewis,d 1832-1898.t Hunting of the Snark0 44914
+700	1 	a Tenniel, John,c Sir,d 1820-19144 ill0 96337
+# Utifrån 700 som har författare-titel kan rudimentära verksposter göras. Här tre verk av 
