@@ -21,7 +21,16 @@ bf:contribution [ a bf:Contribution , kbmarc:MainEntry ;
 bf:originDate "1865"^^xsd:gYear ;
 # Räknar med att vi kommer att ha en manuellt omsedd auktpost på verket
 .
-
+</work/Hunting-of-the-snark> a bf:Text ;
+bf:title [a bf:WorkTitle ;
+            bf:MainTitle "The hunting of the Snark" ] ;
+bf:contribution [a bf:Contribution , kbmarc:MainEntry ;
+a bf:agent ;
+bf:person </person/lewis-Carrol> ;
+bf:role lcrel:auth ] ; 
+# Gjort efter 700-fältet. Roll finns inte med, men vi kan väl utgå från rollen 
+#författare vid 700 för författare-titel
+.
 
 
 #Instance
