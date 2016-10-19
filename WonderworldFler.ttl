@@ -37,6 +37,11 @@ bf:provisionActivity [a bf:Publication ;
                         bf:role lcrel:pbl;
                      bf:date "1951"^^xsd:gYear ;
                      bf:place "New York" ] ;
+# bf:agent rdfs:label "Pocket Books" -om ej auktoriteter på det
+bf:edtionStatement "2. printing" ;
+# Hur använda bf:editionEnumeration?
+bf:seriesStatement "A genuine pocket book classic" ;
+kbmarc:seriesEnumeration "v. 835" ;
 
 # 000		03134camaa22004817a 4500
 #001		11743886
