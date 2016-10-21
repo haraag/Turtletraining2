@@ -27,13 +27,14 @@ rdfs:label "Carrol, Lewis, 1832-1898" ] ;
 bf:content rdaco:1020  ;
 bf:intendedAudience </Audience/barn> ;
 bf:classification [ a bf:ClassificationDdc ; 
+                      bf:edition "23/swe" ;
                       rdfs:label "823.8" ] ;
+#Visar bara vad som kan göras med Bibframe
 bf:classification	</sab/He,u/version7>  ;
 # Hur gör vi med ämne? - finns inte i engelsk post - dela till alla poster från svensk?
 bf:language lclang:eng ;
 
 # + Adminmetadat
-
 
 
 
@@ -51,7 +52,26 @@ rdfs:label "Tenniel, John, 1820-1914";
 # Vi behöver bestämma hur vi ska hantera illustrerade verk - illustrationer som verk,
 # illustrerade verk som en expressionOf ett verk..... - Här modellerat som ett eget verk
 
-# Instance
+#Variant som expressionOf - som nytt verk i Bibframe
+</work/Alice-in-Wonderland-ill-Tenniel> [ a bf:Text; 
+                                          a bf:expressionOf ; 
+                                            bf:work </work/Alice-in-Wonderland> ] ;
+bf:contribution [ a bf:Contribution , kbmarc:MainEntry ;
+                  a   bf:agent   ;
+        bf:person </aukt/Lewis-Carroll> ;
+                   bf:role lcrel:auth ] ;
+bf:contribution [a bf:Contribution ; 
+                   a bf:agent ;
+                   bf:Person </aukt/John-Tenniel> ;
+                 bf:role  lcrel:ill ] ;
+</aukt/Lewis-Caroll> bf:Person ;
+rdfs:label "Caroll, Lewis, 1820-1914" ;
+
+</aukt/John-Tenniel> bf:Person ;
+rdfs:label "Tenniel, John, 1832-1898" ;
+
+
+# Instance med illustrationer som eget verk
 bf:instanceOf  </work/Alice-in-Wonderland> ;
 a bf:Text;
 bf:title [a bf:InstanceTitle ; 
