@@ -18,6 +18,14 @@ bf:title [a bf:Title ;
 bf:isExpressionOf <work/Alice-in-wonderworld> , </work/Through-the-looking-glass> ;
 bf:hasPart <work/Alice-in-wonderworld> , </work/Through-the-looking-glass> ;
 bf:responsibilityStatement "by Lewis Carroll ; edited by Martin Gardner ; expanded and updated by Mark Burstein ; original illustrations by John Tenniel" ;
+bf:provisionActivity [a bf:Publication ;
+                      a  bf:agent; rdfs:label "W. W. Norton & Company" ;
+                        bf:role lcrel:pbl ;
+#264 fält - inga problem!
+bf:date "2015"^^xsd:gYear ] ;
+bf:extent "xlvi, 364 pages" ;
+bf:illustrativeContent [  ] , "illustrations (some color)"  ;
+kbmarc:storlek "27 cm" ;
+bf:language lclang:eng ;
 
-bf:date "2015"xsd:^^gYear ;            
 .
