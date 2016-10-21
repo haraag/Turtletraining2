@@ -19,11 +19,11 @@ bf:contribution [ a bf:Contribution , kbmarc:MainEntry ;
         bf:person </aukt/Lewis-Carroll> ;
                    bf:role lcrel:auth ] ;
 bf:originDate "1865"^^xsd:gYear ;
-# Räknar med att vi kommer att ha en manuellt omsedd auktpost på verket
+# Räknar med att vi kommer att ha en manuellt omsedd auktpost på detta verk
 .
 </work/Hunting-of-the-snark> a bf:Text ;
 bf:title [a bf:WorkTitle ;
-            bf:MainTitle "The hunting of the Snark" ] ;
+            bf:mainTitle "The hunting of the Snark" ] ;
 bf:contribution [a bf:Contribution , kbmarc:MainEntry ;
 a bf:agent ;
 bf:person </person/lewis-Carrol> ;
