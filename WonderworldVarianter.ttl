@@ -17,7 +17,7 @@ bf:title [a bf:Title ;
             bf:subTitle  "Alice's adventures in Wonderland & Through the looking-glass" ] ;
 bf:isExpressionOf <work/Alice-in-wonderworld> , </work/Through-the-looking-glass> ;
 bf:hasPart <work/Alice-in-wonderworld> , </work/Through-the-looking-glass> ;
+bf:responsibilityStatement "by Lewis Carroll ; edited by Martin Gardner ; expanded and updated by Mark Burstein ; original illustrations by John Tenniel" ;
 
-
-            
+bf:date "2015"xsd:^^gYear ;            
 .
