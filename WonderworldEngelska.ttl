@@ -28,7 +28,7 @@ bf:content rdaco:1020  ;
 bf:intendedAudience </Audience/barn> ;
 bf:classification [ a bf:ClassificationDdc ; 
                       bf:edition "23/swe" ;
-                      rdfs:label "823.8" ] ;
+                     bf:notation "823.8" ] ;
 #Visar bara vad som kan göras med Bibframe
 bf:classification	</sab/He,u/version7>  ;
 # Hur gör vi med ämne? - finns inte i engelsk post - dela till alla poster från svensk?
