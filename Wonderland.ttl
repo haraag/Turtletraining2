@@ -65,7 +65,7 @@ bf:provisionActivity [a bf:Production ;
           bf:date "2016"^^xsd:gYear ] ;
 bf:extent "122 sidor" ;
 bf:illustrativeContent [  ] , "illustrationer (vissa i färg)" ;
-kbmarc:storlek "25 cm" ;
+bf:dimension "25 cm" ;
 bf:carrier rdaco:1049 ;
 bf:media  rdamt:1007 ;
 bf:responsibilityStatement "i översättning av Åke Runnquist ; med illustrationer av Tove Jansson" ;
